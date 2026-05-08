@@ -66,22 +66,24 @@ export default function Home() {
       </div>
 
       <section className="relative z-10 flex flex-1 flex-col overflow-hidden">
-        <div className="container-enfilat flex min-h-16 items-center py-3 sm:min-h-20 sm:py-4">
-          <a href="/" className="flex items-center gap-3">
-            <img
-              src="/logo.png"
-              alt={brandName}
-              className="h-24 w-24 shrink-0 object-cover sm:h-28 sm:w-28"
-            />
-            <span>
-              <span className="block font-heading text-3xl leading-none tracking-[0.01em] text-enfilat-ink sm:text-5xl">
-                Enfila&apos;t Creacions
+        <div className="border-b border-pink-200/70 bg-enfilat-pink/80 backdrop-blur-md sm:border-b-0 sm:bg-transparent sm:backdrop-blur-0">
+          <div className="container-enfilat flex min-h-16 items-center py-3 sm:min-h-20 sm:py-4">
+            <a href="/" className="flex items-center gap-3">
+              <img
+                src="/logo.png"
+                alt={brandName}
+                className="h-24 w-24 shrink-0 object-cover sm:h-28 sm:w-28"
+              />
+              <span>
+                <span className="block font-heading text-3xl leading-none tracking-[0.01em] text-enfilat-ink sm:text-5xl">
+                  Enfila&apos;t Creacions
+                </span>
+                <span className="mt-1 block text-[0.68rem] uppercase tracking-[0.18em] text-enfilat-ink/50 sm:text-xs sm:tracking-[0.2em]">
+                  Taller creatiu
+                </span>
               </span>
-              <span className="mt-1 block text-[0.68rem] uppercase tracking-[0.18em] text-enfilat-ink/50 sm:text-xs sm:tracking-[0.2em]">
-                Taller creatiu
-              </span>
-            </span>
-          </a>
+            </a>
+          </div>
         </div>
 
         <div className="container-enfilat flex flex-1 items-center py-3 sm:py-5 lg:py-6">

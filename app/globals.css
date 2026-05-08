@@ -32,6 +32,6 @@ body {
   }
 
   .surface-panel {
-    @apply rounded-[1.5rem] border border-pink-200/70 bg-enfilat-petal/60 shadow-sm shadow-pink-900/5 backdrop-blur-sm;
+    @apply rounded-[1.5rem] border border-pink-200/70 bg-enfilat-petal/50 shadow-sm shadow-pink-900/5 backdrop-blur-sm;
   }
 }
