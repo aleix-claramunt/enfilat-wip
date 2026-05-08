@@ -3,11 +3,16 @@ import "./globals.css";
 const brandName = "Enfila't Creacions";
 const description =
   "Descobreix el catàleg en PDF d'Enfila't Creacions i demana informació per WhatsApp o Instagram.";
+const siteUrl = "https://www.enfilatcreacions.com";
 
 export const metadata = {
+  metadataBase: new URL(siteUrl),
   title: `${brandName} | Catàleg`,
   description,
   manifest: "/site.webmanifest",
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -19,6 +24,7 @@ export const metadata = {
   openGraph: {
     title: `${brandName} | Catàleg`,
     description,
+    url: "/",
     type: "website",
     locale: "es_ES",
     siteName: brandName,
