@@ -52,14 +52,14 @@ function SecondaryButton({ href, children, className = "" }) {
 export default function Home() {
   return (
     <main className="relative flex min-h-dvh flex-col overflow-hidden bg-enfilat-cream">
-      <div className="pointer-events-none fixed inset-0 z-0 grid grid-cols-2 md:grid-cols-3">
-        {backgroundImages.map((src) => (
+      <div className="pointer-events-none fixed inset-0 z-0 grid grid-cols-1 md:grid-cols-3">
+        {backgroundImages.map((src, index) => (
           <img
             key={src}
             src={src}
             alt=""
             aria-hidden="true"
-            className="h-full w-full object-cover"
+            className={`h-full w-full object-cover ${index !== 0 ? "hidden md:block" : ""}`}
           />
         ))}
         <div className="absolute inset-0 bg-pink-950/20" />
@@ -145,7 +145,7 @@ export default function Home() {
         target="_blank"
         rel="noreferrer"
         aria-label="Demanar per WhatsApp"
-        className="fixed bottom-5 right-5 z-20 inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-soft transition hover:-translate-y-0.5 sm:hidden"
+        className="fixed bottom-5 right-5 z-20 inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-soft transition hover:-translate-y-0.5"
       >
         <MessageCircle size={25} aria-hidden="true" />
       </a>
