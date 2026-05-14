@@ -102,7 +102,7 @@ export default function Home() {
             </p>
 
             <div className="mt-6 grid gap-3 sm:mt-8 sm:flex sm:flex-wrap">
-              <PrimaryButton href="/cataleg.pdf" className="w-full sm:w-auto">
+              <PrimaryButton href="/cataleg-low.pdf" className="w-full sm:w-auto">
                 Veure catàleg
                 <ArrowRight size={18} aria-hidden="true" />
               </PrimaryButton>
